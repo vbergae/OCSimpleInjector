@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CC8FD1711471AB6500477B80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD1701471AB6500477B80 /* Cocoa.framework */; };
+		CC8FD17B1471AB6500477B80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC8FD1791471AB6500477B80 /* InfoPlist.strings */; };
+		CC8FD17F1471AB6500477B80 /* OCDependencyInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD17E1471AB6500477B80 /* OCDependencyInjector.m */; };
+		CC8FD1871471AB6500477B80 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD1861471AB6500477B80 /* SenTestingKit.framework */; };
+		CC8FD1881471AB6500477B80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD1701471AB6500477B80 /* Cocoa.framework */; };
+		CC8FD18B1471AB6500477B80 /* OCDependencyInjector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD16D1471AB6500477B80 /* OCDependencyInjector.framework */; };
+		CC8FD1911471AB6500477B80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC8FD18F1471AB6500477B80 /* InfoPlist.strings */; };
+		CC8FD1941471AB6500477B80 /* OCDependencyInjectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD1931471AB6500477B80 /* OCDependencyInjectorTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CC8FD1891471AB6500477B80 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CC8FD1631471AB6500477B80 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CC8FD16C1471AB6500477B80;
+			remoteInfo = OCDependencyInjector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CC8FD16D1471AB6500477B80 /* OCDependencyInjector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCDependencyInjector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8FD1701471AB6500477B80 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		CC8FD1731471AB6500477B80 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		CC8FD1741471AB6500477B80 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CC8FD1751471AB6500477B80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC8FD1781471AB6500477B80 /* OCDependencyInjector-Info.plist */ = {isa = PBXFileReference; path = "OCDependencyInjector-Info.plist"; sourceTree = "<group>"; };
+		CC8FD17A1471AB6500477B80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC8FD17C1471AB6500477B80 /* OCDependencyInjector-Prefix.pch */ = {isa = PBXFileReference; path = "OCDependencyInjector-Prefix.pch"; sourceTree = "<group>"; };
+		CC8FD17D1471AB6500477B80 /* OCDependencyInjector.h */ = {isa = PBXFileReference; path = OCDependencyInjector.h; sourceTree = "<group>"; };
+		CC8FD17E1471AB6500477B80 /* OCDependencyInjector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDependencyInjector.m; sourceTree = "<group>"; };
+		CC8FD1851471AB6500477B80 /* OCDependencyInjectorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCDependencyInjectorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8FD1861471AB6500477B80 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CC8FD18E1471AB6500477B80 /* OCDependencyInjectorTests-Info.plist */ = {isa = PBXFileReference; path = "OCDependencyInjectorTests-Info.plist"; sourceTree = "<group>"; };
+		CC8FD1901471AB6500477B80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CC8FD1921471AB6500477B80 /* OCDependencyInjectorTests.h */ = {isa = PBXFileReference; path = OCDependencyInjectorTests.h; sourceTree = "<group>"; };
+		CC8FD1931471AB6500477B80 /* OCDependencyInjectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDependencyInjectorTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CC8FD1691471AB6500477B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8FD1711471AB6500477B80 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8FD1811471AB6500477B80 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8FD1871471AB6500477B80 /* SenTestingKit.framework in Frameworks */,
+				CC8FD1881471AB6500477B80 /* Cocoa.framework in Frameworks */,
+				CC8FD18B1471AB6500477B80 /* OCDependencyInjector.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CC8FD1611471AB6500477B80 = {
+			isa = PBXGroup;
+			children = (
+				CC8FD1761471AB6500477B80 /* OCDependencyInjector */,
+				CC8FD18C1471AB6500477B80 /* OCDependencyInjectorTests */,
+				CC8FD16F1471AB6500477B80 /* Frameworks */,
+				CC8FD16E1471AB6500477B80 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CC8FD16E1471AB6500477B80 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CC8FD16D1471AB6500477B80 /* OCDependencyInjector.framework */,
+				CC8FD1851471AB6500477B80 /* OCDependencyInjectorTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CC8FD16F1471AB6500477B80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC8FD1701471AB6500477B80 /* Cocoa.framework */,
+				CC8FD1861471AB6500477B80 /* SenTestingKit.framework */,
+				CC8FD1721471AB6500477B80 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC8FD1721471AB6500477B80 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC8FD1731471AB6500477B80 /* AppKit.framework */,
+				CC8FD1741471AB6500477B80 /* CoreData.framework */,
+				CC8FD1751471AB6500477B80 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		CC8FD1761471AB6500477B80 /* OCDependencyInjector */ = {
+			isa = PBXGroup;
+			children = (
+				CC8FD17D1471AB6500477B80 /* OCDependencyInjector.h */,
+				CC8FD17E1471AB6500477B80 /* OCDependencyInjector.m */,
+				CC8FD1771471AB6500477B80 /* Supporting Files */,
+			);
+			path = OCDependencyInjector;
+			sourceTree = "<group>";
+		};
+		CC8FD1771471AB6500477B80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC8FD1781471AB6500477B80 /* OCDependencyInjector-Info.plist */,
+				CC8FD1791471AB6500477B80 /* InfoPlist.strings */,
+				CC8FD17C1471AB6500477B80 /* OCDependencyInjector-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CC8FD18C1471AB6500477B80 /* OCDependencyInjectorTests */ = {
+			isa = PBXGroup;
+			children = (
+				CC8FD1921471AB6500477B80 /* OCDependencyInjectorTests.h */,
+				CC8FD1931471AB6500477B80 /* OCDependencyInjectorTests.m */,
+				CC8FD18D1471AB6500477B80 /* Supporting Files */,
+			);
+			path = OCDependencyInjectorTests;
+			sourceTree = "<group>";
+		};
+		CC8FD18D1471AB6500477B80 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CC8FD18E1471AB6500477B80 /* OCDependencyInjectorTests-Info.plist */,
+				CC8FD18F1471AB6500477B80 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		CC8FD16A1471AB6500477B80 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		CC8FD16C1471AB6500477B80 /* OCDependencyInjector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC8FD1971471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCDependencyInjector" */;
+			buildPhases = (
+				CC8FD1681471AB6500477B80 /* Sources */,
+				CC8FD1691471AB6500477B80 /* Frameworks */,
+				CC8FD16A1471AB6500477B80 /* Headers */,
+				CC8FD16B1471AB6500477B80 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OCDependencyInjector;
+			productName = OCDependencyInjector;
+			productReference = CC8FD16D1471AB6500477B80 /* OCDependencyInjector.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		CC8FD1841471AB6500477B80 /* OCDependencyInjectorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CC8FD19A1471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCDependencyInjectorTests" */;
+			buildPhases = (
+				CC8FD1801471AB6500477B80 /* Sources */,
+				CC8FD1811471AB6500477B80 /* Frameworks */,
+				CC8FD1821471AB6500477B80 /* Resources */,
+				CC8FD1831471AB6500477B80 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CC8FD18A1471AB6500477B80 /* PBXTargetDependency */,
+			);
+			name = OCDependencyInjectorTests;
+			productName = OCDependencyInjectorTests;
+			productReference = CC8FD1851471AB6500477B80 /* OCDependencyInjectorTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CC8FD1631471AB6500477B80 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = CC8FD1661471AB6500477B80 /* Build configuration list for PBXProject "OCDependencyInjector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CC8FD1611471AB6500477B80;
+			productRefGroup = CC8FD16E1471AB6500477B80 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CC8FD16C1471AB6500477B80 /* OCDependencyInjector */,
+				CC8FD1841471AB6500477B80 /* OCDependencyInjectorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CC8FD16B1471AB6500477B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8FD17B1471AB6500477B80 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8FD1821471AB6500477B80 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8FD1911471AB6500477B80 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC8FD1831471AB6500477B80 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CC8FD1681471AB6500477B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8FD17F1471AB6500477B80 /* OCDependencyInjector.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC8FD1801471AB6500477B80 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC8FD1941471AB6500477B80 /* OCDependencyInjectorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CC8FD18A1471AB6500477B80 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CC8FD16C1471AB6500477B80 /* OCDependencyInjector */;
+			targetProxy = CC8FD1891471AB6500477B80 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CC8FD1791471AB6500477B80 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC8FD17A1471AB6500477B80 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CC8FD18F1471AB6500477B80 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CC8FD1901471AB6500477B80 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CC8FD1951471AB6500477B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		CC8FD1961471AB6500477B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CC8FD1981471AB6500477B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCDependencyInjector/OCDependencyInjector-Prefix.pch";
+				INFOPLIST_FILE = "OCDependencyInjector/OCDependencyInjector-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		CC8FD1991471AB6500477B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCDependencyInjector/OCDependencyInjector-Prefix.pch";
+				INFOPLIST_FILE = "OCDependencyInjector/OCDependencyInjector-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		CC8FD19B1471AB6500477B80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCDependencyInjector/OCDependencyInjector-Prefix.pch";
+				INFOPLIST_FILE = "OCDependencyInjectorTests/OCDependencyInjectorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CC8FD19C1471AB6500477B80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OCDependencyInjector/OCDependencyInjector-Prefix.pch";
+				INFOPLIST_FILE = "OCDependencyInjectorTests/OCDependencyInjectorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CC8FD1661471AB6500477B80 /* Build configuration list for PBXProject "OCDependencyInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC8FD1951471AB6500477B80 /* Debug */,
+				CC8FD1961471AB6500477B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CC8FD1971471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCDependencyInjector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC8FD1981471AB6500477B80 /* Debug */,
+				CC8FD1991471AB6500477B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CC8FD19A1471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCDependencyInjectorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC8FD19B1471AB6500477B80 /* Debug */,
+				CC8FD19C1471AB6500477B80 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CC8FD1631471AB6500477B80 /* Project object */;
+}
