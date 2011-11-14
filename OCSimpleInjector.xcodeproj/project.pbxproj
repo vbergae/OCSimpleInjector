@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		CC8FD1711471AB6500477B80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD1701471AB6500477B80 /* Cocoa.framework */; };
-		CC8FD17B1471AB6500477B80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC8FD1791471AB6500477B80 /* InfoPlist.strings */; };
-		CC8FD17F1471AB6500477B80 /* OCDependencyInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD17E1471AB6500477B80 /* OCDependencyInjector.m */; };
 		CC8FD1871471AB6500477B80 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD1861471AB6500477B80 /* SenTestingKit.framework */; };
 		CC8FD1881471AB6500477B80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD1701471AB6500477B80 /* Cocoa.framework */; };
-		CC8FD18B1471AB6500477B80 /* OCDependencyInjector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD16D1471AB6500477B80 /* OCDependencyInjector.framework */; };
+		CC8FD18B1471AB6500477B80 /* OCSimpleInjector.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD16D1471AB6500477B80 /* OCSimpleInjector.framework */; };
 		CC8FD1911471AB6500477B80 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CC8FD18F1471AB6500477B80 /* InfoPlist.strings */; };
-		CC8FD1941471AB6500477B80 /* OCDependencyInjectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD1931471AB6500477B80 /* OCDependencyInjectorTests.m */; };
+		CC8FD19F1471AB9100477B80 /* NSObject+DependencyInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8FD19D1471AB9100477B80 /* NSObject+DependencyInjector.h */; };
+		CC8FD1A01471AB9100477B80 /* NSObject+DependencyInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD19E1471AB9100477B80 /* NSObject+DependencyInjector.m */; };
+		CC8FD1A71471AF3A00477B80 /* NSObject+DependecyInjectorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD1A61471AF3A00477B80 /* NSObject+DependecyInjectorTests.m */; };
+		CC8FD1AD1471B65000477B80 /* Services.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC8FD1AB1471B44300477B80 /* Services.plist */; };
+		CC8FD20C1471CC6200477B80 /* OCSimpleInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = CC8FD20B1471CC6200477B80 /* OCSimpleInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC8FD20E1471CD7500477B80 /* OCSimpleInjector.h in Resources */ = {isa = PBXBuildFile; fileRef = CC8FD20B1471CC6200477B80 /* OCSimpleInjector.h */; };
+		CC8FD2121471D03300477B80 /* FooDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD2111471D03300477B80 /* FooDummy.m */; };
+		CC8FD2141471D07400477B80 /* BarDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD2131471D07400477B80 /* BarDummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,22 +33,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		CC8FD16D1471AB6500477B80 /* OCDependencyInjector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCDependencyInjector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8FD16D1471AB6500477B80 /* OCSimpleInjector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCSimpleInjector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8FD1701471AB6500477B80 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		CC8FD1731471AB6500477B80 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		CC8FD1741471AB6500477B80 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		CC8FD1751471AB6500477B80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		CC8FD1781471AB6500477B80 /* OCDependencyInjector-Info.plist */ = {isa = PBXFileReference; path = "OCDependencyInjector-Info.plist"; sourceTree = "<group>"; };
-		CC8FD17A1471AB6500477B80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CC8FD17C1471AB6500477B80 /* OCDependencyInjector-Prefix.pch */ = {isa = PBXFileReference; path = "OCDependencyInjector-Prefix.pch"; sourceTree = "<group>"; };
-		CC8FD17D1471AB6500477B80 /* OCDependencyInjector.h */ = {isa = PBXFileReference; path = OCDependencyInjector.h; sourceTree = "<group>"; };
-		CC8FD17E1471AB6500477B80 /* OCDependencyInjector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDependencyInjector.m; sourceTree = "<group>"; };
-		CC8FD1851471AB6500477B80 /* OCDependencyInjectorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCDependencyInjectorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CC8FD1781471AB6500477B80 /* OCSimpleInjector-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCSimpleInjector-Info.plist"; sourceTree = "<group>"; };
+		CC8FD17C1471AB6500477B80 /* OCSimpleInjector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCSimpleInjector-Prefix.pch"; sourceTree = "<group>"; };
+		CC8FD1851471AB6500477B80 /* OCSimpleInjectorTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OCSimpleInjectorTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8FD1861471AB6500477B80 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		CC8FD18E1471AB6500477B80 /* OCDependencyInjectorTests-Info.plist */ = {isa = PBXFileReference; path = "OCDependencyInjectorTests-Info.plist"; sourceTree = "<group>"; };
+		CC8FD18E1471AB6500477B80 /* OCSimpleInjectorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCSimpleInjectorTests-Info.plist"; sourceTree = "<group>"; };
 		CC8FD1901471AB6500477B80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		CC8FD1921471AB6500477B80 /* OCDependencyInjectorTests.h */ = {isa = PBXFileReference; path = OCDependencyInjectorTests.h; sourceTree = "<group>"; };
-		CC8FD1931471AB6500477B80 /* OCDependencyInjectorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCDependencyInjectorTests.m; sourceTree = "<group>"; };
+		CC8FD19D1471AB9100477B80 /* NSObject+DependencyInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+DependencyInjector.h"; path = "../NSObject+DependencyInjector.h"; sourceTree = "<group>"; };
+		CC8FD19E1471AB9100477B80 /* NSObject+DependencyInjector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+DependencyInjector.m"; path = "../NSObject+DependencyInjector.m"; sourceTree = "<group>"; };
+		CC8FD1A21471AE9700477B80 /* FooDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FooDummy.h; sourceTree = "<group>"; };
+		CC8FD1A51471AF3A00477B80 /* NSObject+DependecyInjectorTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+DependecyInjectorTests.h"; sourceTree = "<group>"; };
+		CC8FD1A61471AF3A00477B80 /* NSObject+DependecyInjectorTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+DependecyInjectorTests.m"; sourceTree = "<group>"; };
+		CC8FD1AB1471B44300477B80 /* Services.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Services.plist; path = ../OCDependencyInjector/Services.plist; sourceTree = "<group>"; };
+		CC8FD1B31471C67600477B80 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CC8FD2081471CA7400477B80 /* BarDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarDummy.h; sourceTree = "<group>"; };
+		CC8FD20B1471CC6200477B80 /* OCSimpleInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCSimpleInjector.h; sourceTree = "<group>"; };
+		CC8FD2111471D03300477B80 /* FooDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooDummy.m; sourceTree = SOURCE_ROOT; };
+		CC8FD2131471D07400477B80 /* BarDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarDummy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +69,7 @@
 			files = (
 				CC8FD1871471AB6500477B80 /* SenTestingKit.framework in Frameworks */,
 				CC8FD1881471AB6500477B80 /* Cocoa.framework in Frameworks */,
-				CC8FD18B1471AB6500477B80 /* OCDependencyInjector.framework in Frameworks */,
+				CC8FD18B1471AB6500477B80 /* OCSimpleInjector.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,8 +89,8 @@
 		CC8FD16E1471AB6500477B80 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CC8FD16D1471AB6500477B80 /* OCDependencyInjector.framework */,
-				CC8FD1851471AB6500477B80 /* OCDependencyInjectorTests.octest */,
+				CC8FD16D1471AB6500477B80 /* OCSimpleInjector.framework */,
+				CC8FD1851471AB6500477B80 /* OCSimpleInjectorTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,26 +100,17 @@
 			children = (
 				CC8FD1701471AB6500477B80 /* Cocoa.framework */,
 				CC8FD1861471AB6500477B80 /* SenTestingKit.framework */,
-				CC8FD1721471AB6500477B80 /* Other Frameworks */,
+				CC8FD1B31471C67600477B80 /* Foundation.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		CC8FD1721471AB6500477B80 /* Other Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CC8FD1731471AB6500477B80 /* AppKit.framework */,
-				CC8FD1741471AB6500477B80 /* CoreData.framework */,
-				CC8FD1751471AB6500477B80 /* Foundation.framework */,
-			);
-			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
 		CC8FD1761471AB6500477B80 /* OCDependencyInjector */ = {
 			isa = PBXGroup;
 			children = (
-				CC8FD17D1471AB6500477B80 /* OCDependencyInjector.h */,
-				CC8FD17E1471AB6500477B80 /* OCDependencyInjector.m */,
+				CC8FD20B1471CC6200477B80 /* OCSimpleInjector.h */,
+				CC8FD19E1471AB9100477B80 /* NSObject+DependencyInjector.m */,
+				CC8FD19D1471AB9100477B80 /* NSObject+DependencyInjector.h */,
 				CC8FD1771471AB6500477B80 /* Supporting Files */,
 			);
 			path = OCDependencyInjector;
@@ -120,9 +119,8 @@
 		CC8FD1771471AB6500477B80 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CC8FD1781471AB6500477B80 /* OCDependencyInjector-Info.plist */,
-				CC8FD1791471AB6500477B80 /* InfoPlist.strings */,
-				CC8FD17C1471AB6500477B80 /* OCDependencyInjector-Prefix.pch */,
+				CC8FD1781471AB6500477B80 /* OCSimpleInjector-Info.plist */,
+				CC8FD17C1471AB6500477B80 /* OCSimpleInjector-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -130,8 +128,9 @@
 		CC8FD18C1471AB6500477B80 /* OCDependencyInjectorTests */ = {
 			isa = PBXGroup;
 			children = (
-				CC8FD1921471AB6500477B80 /* OCDependencyInjectorTests.h */,
-				CC8FD1931471AB6500477B80 /* OCDependencyInjectorTests.m */,
+				CC8FD1A11471AE7400477B80 /* Dummy Classes */,
+				CC8FD1A51471AF3A00477B80 /* NSObject+DependecyInjectorTests.h */,
+				CC8FD1A61471AF3A00477B80 /* NSObject+DependecyInjectorTests.m */,
 				CC8FD18D1471AB6500477B80 /* Supporting Files */,
 			);
 			path = OCDependencyInjectorTests;
@@ -140,11 +139,24 @@
 		CC8FD18D1471AB6500477B80 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CC8FD18E1471AB6500477B80 /* OCDependencyInjectorTests-Info.plist */,
+				CC8FD1AB1471B44300477B80 /* Services.plist */,
+				CC8FD18E1471AB6500477B80 /* OCSimpleInjectorTests-Info.plist */,
 				CC8FD18F1471AB6500477B80 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
+		};
+		CC8FD1A11471AE7400477B80 /* Dummy Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CC8FD1A21471AE9700477B80 /* FooDummy.h */,
+				CC8FD2111471D03300477B80 /* FooDummy.m */,
+				CC8FD2081471CA7400477B80 /* BarDummy.h */,
+				CC8FD2131471D07400477B80 /* BarDummy.m */,
+			);
+			name = "Dummy Classes";
+			path = OCDependencyInjectorTests;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -153,15 +165,17 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8FD20C1471CC6200477B80 /* OCSimpleInjector.h in Headers */,
+				CC8FD19F1471AB9100477B80 /* NSObject+DependencyInjector.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		CC8FD16C1471AB6500477B80 /* OCDependencyInjector */ = {
+		CC8FD16C1471AB6500477B80 /* OCSimpleInjector */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC8FD1971471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCDependencyInjector" */;
+			buildConfigurationList = CC8FD1971471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCSimpleInjector" */;
 			buildPhases = (
 				CC8FD1681471AB6500477B80 /* Sources */,
 				CC8FD1691471AB6500477B80 /* Frameworks */,
@@ -172,14 +186,14 @@
 			);
 			dependencies = (
 			);
-			name = OCDependencyInjector;
+			name = OCSimpleInjector;
 			productName = OCDependencyInjector;
-			productReference = CC8FD16D1471AB6500477B80 /* OCDependencyInjector.framework */;
+			productReference = CC8FD16D1471AB6500477B80 /* OCSimpleInjector.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		CC8FD1841471AB6500477B80 /* OCDependencyInjectorTests */ = {
+		CC8FD1841471AB6500477B80 /* OCSimpleInjectorTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CC8FD19A1471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCDependencyInjectorTests" */;
+			buildConfigurationList = CC8FD19A1471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCSimpleInjectorTests" */;
 			buildPhases = (
 				CC8FD1801471AB6500477B80 /* Sources */,
 				CC8FD1811471AB6500477B80 /* Frameworks */,
@@ -191,9 +205,9 @@
 			dependencies = (
 				CC8FD18A1471AB6500477B80 /* PBXTargetDependency */,
 			);
-			name = OCDependencyInjectorTests;
+			name = OCSimpleInjectorTests;
 			productName = OCDependencyInjectorTests;
-			productReference = CC8FD1851471AB6500477B80 /* OCDependencyInjectorTests.octest */;
+			productReference = CC8FD1851471AB6500477B80 /* OCSimpleInjectorTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -204,7 +218,7 @@
 			attributes = {
 				LastUpgradeCheck = 0420;
 			};
-			buildConfigurationList = CC8FD1661471AB6500477B80 /* Build configuration list for PBXProject "OCDependencyInjector" */;
+			buildConfigurationList = CC8FD1661471AB6500477B80 /* Build configuration list for PBXProject "OCSimpleInjector" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -216,8 +230,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CC8FD16C1471AB6500477B80 /* OCDependencyInjector */,
-				CC8FD1841471AB6500477B80 /* OCDependencyInjectorTests */,
+				CC8FD16C1471AB6500477B80 /* OCSimpleInjector */,
+				CC8FD1841471AB6500477B80 /* OCSimpleInjectorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -227,7 +241,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC8FD17B1471AB6500477B80 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,7 +248,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC8FD1AD1471B65000477B80 /* Services.plist in Resources */,
 				CC8FD1911471AB6500477B80 /* InfoPlist.strings in Resources */,
+				CC8FD20E1471CD7500477B80 /* OCSimpleInjector.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,7 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC8FD17F1471AB6500477B80 /* OCDependencyInjector.m in Sources */,
+				CC8FD1A01471AB9100477B80 /* NSObject+DependencyInjector.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,7 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC8FD1941471AB6500477B80 /* OCDependencyInjectorTests.m in Sources */,
+				CC8FD1A71471AF3A00477B80 /* NSObject+DependecyInjectorTests.m in Sources */,
+				CC8FD2121471D03300477B80 /* FooDummy.m in Sources */,
+				CC8FD2141471D07400477B80 /* BarDummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,20 +296,12 @@
 /* Begin PBXTargetDependency section */
 		CC8FD18A1471AB6500477B80 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CC8FD16C1471AB6500477B80 /* OCDependencyInjector */;
+			target = CC8FD16C1471AB6500477B80 /* OCSimpleInjector */;
 			targetProxy = CC8FD1891471AB6500477B80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CC8FD1791471AB6500477B80 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CC8FD17A1471AB6500477B80 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		CC8FD18F1471AB6500477B80 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -356,9 +365,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDependencyInjector/OCDependencyInjector-Prefix.pch";
-				INFOPLIST_FILE = "OCDependencyInjector/OCDependencyInjector-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "OCDependencyInjector/OCSimpleInjector-Prefix.pch";
+				INFOPLIST_FILE = "OCDependencyInjector/OCSimpleInjector-Info.plist";
+				PRODUCT_NAME = OCSimpleInjector;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -370,9 +379,9 @@
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDependencyInjector/OCDependencyInjector-Prefix.pch";
-				INFOPLIST_FILE = "OCDependencyInjector/OCDependencyInjector-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "OCDependencyInjector/OCSimpleInjector-Prefix.pch";
+				INFOPLIST_FILE = "OCDependencyInjector/OCSimpleInjector-Info.plist";
+				PRODUCT_NAME = OCSimpleInjector;
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -382,9 +391,9 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDependencyInjector/OCDependencyInjector-Prefix.pch";
-				INFOPLIST_FILE = "OCDependencyInjectorTests/OCDependencyInjectorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "OCDependencyInjector/OCSimpleInjector-Prefix.pch";
+				INFOPLIST_FILE = "OCDependencyInjectorTests/OCSimpleInjectorTests-Info.plist";
+				PRODUCT_NAME = OCSimpleInjectorTests;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
@@ -394,9 +403,9 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = "$(DEVELOPER_LIBRARY_DIR)/Frameworks";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "OCDependencyInjector/OCDependencyInjector-Prefix.pch";
-				INFOPLIST_FILE = "OCDependencyInjectorTests/OCDependencyInjectorTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "OCDependencyInjector/OCSimpleInjector-Prefix.pch";
+				INFOPLIST_FILE = "OCDependencyInjectorTests/OCSimpleInjectorTests-Info.plist";
+				PRODUCT_NAME = OCSimpleInjectorTests;
 				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
@@ -404,7 +413,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CC8FD1661471AB6500477B80 /* Build configuration list for PBXProject "OCDependencyInjector" */ = {
+		CC8FD1661471AB6500477B80 /* Build configuration list for PBXProject "OCSimpleInjector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC8FD1951471AB6500477B80 /* Debug */,
@@ -413,21 +422,23 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CC8FD1971471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCDependencyInjector" */ = {
+		CC8FD1971471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCSimpleInjector" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC8FD1981471AB6500477B80 /* Debug */,
 				CC8FD1991471AB6500477B80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		CC8FD19A1471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCDependencyInjectorTests" */ = {
+		CC8FD19A1471AB6500477B80 /* Build configuration list for PBXNativeTarget "OCSimpleInjectorTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CC8FD19B1471AB6500477B80 /* Debug */,
 				CC8FD19C1471AB6500477B80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
