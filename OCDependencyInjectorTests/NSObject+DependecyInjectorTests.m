@@ -25,6 +25,17 @@
                          @"Array key fails");
 }
 
+- (void)testSharedInstance
+{
+    BarDummy *bar = [[BarDummy alloc] init];
+    STAssertNoThrow([bar.foo setString:@"Same instance"],
+                     @"bar.foo fails setting 'string' property");
+                     
+    BarDummy *bar2 = [[BarDummy alloc] init];
+    STAssertTrue([bar.foo.string isEqualToString:bar2.foo.string],
+                 @"DI Doen's returns same instance");
+}
+
 - (void)testInvalidService
 {
     InvalidDummy *invalid = [[InvalidDummy alloc] init];

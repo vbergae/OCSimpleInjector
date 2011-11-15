@@ -9,6 +9,7 @@
 //  file that was distributed with this source code.
 
 #import "NSObject+DependencyInjector.h"
+#import "ServiceStorage.h"
 
 NSString * const kServiceKey        = @"Services";
 NSString * const kSubfixServiceKey  = @"Service";
@@ -23,11 +24,21 @@ NSString * const kSubfixServiceKey  = @"Service";
 
 - (id)get:(NSString *)service
 {
-    NSDictionary *parameters = [NSObject parametersOfService:service];
+    id instance = nil;
+    instance = [[ServiceStorage sharedStorage] getService:service];
     
-    // Creates a new autoreleased instance of 'service' class
-    id instance = [[[NSClassFromString(service) alloc] init] autorelease];
-    [instance setValuesForKeysWithDictionary:parameters];
+    if (!instance) {
+        NSDictionary *parameters = [NSObject parametersOfService:service];
+        
+        // Creates a new autoreleased instance of 'service' class
+        instance = [[[NSClassFromString(service) alloc] init] autorelease];
+        [instance setValuesForKeysWithDictionary:parameters];    
+        
+        if (instance) {
+            [[ServiceStorage sharedStorage] saveService:service 
+                                                 object:instance];            
+        }
+    }
     
     return instance;
 }
@@ -39,7 +50,7 @@ NSString * const kSubfixServiceKey  = @"Service";
     NSString *key                       = nil; 
     NSDictionary *services              = nil;
  
-    // Searches Service.plist file
+    // Searchs Services.plist file
     for (NSBundle *bundle in [NSBundle allBundles]) {
         path =  [bundle pathForResource:kServiceKey 
                                  ofType:@"plist"];

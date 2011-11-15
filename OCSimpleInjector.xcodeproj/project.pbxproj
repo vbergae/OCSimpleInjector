@@ -20,6 +20,8 @@
 		CC8FD20E1471CD7500477B80 /* OCSimpleInjector.h in Resources */ = {isa = PBXBuildFile; fileRef = CC8FD20B1471CC6200477B80 /* OCSimpleInjector.h */; };
 		CC8FD2121471D03300477B80 /* FooDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD2111471D03300477B80 /* FooDummy.m */; };
 		CC8FD2141471D07400477B80 /* BarDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD2131471D07400477B80 /* BarDummy.m */; };
+		CCA71DB214731EE900DC7CD7 /* ServiceStorage.h in Headers */ = {isa = PBXBuildFile; fileRef = CCA71DB014731EE900DC7CD7 /* ServiceStorage.h */; };
+		CCA71DB314731EE900DC7CD7 /* ServiceStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = CCA71DB114731EE900DC7CD7 /* ServiceStorage.m */; };
 		CDA158BE1472642600948384 /* InvalidDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA158BD1472642600948384 /* InvalidDummy.m */; };
 /* End PBXBuildFile section */
 
@@ -53,6 +55,8 @@
 		CC8FD20B1471CC6200477B80 /* OCSimpleInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCSimpleInjector.h; sourceTree = "<group>"; };
 		CC8FD2111471D03300477B80 /* FooDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooDummy.m; sourceTree = SOURCE_ROOT; };
 		CC8FD2131471D07400477B80 /* BarDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarDummy.m; sourceTree = "<group>"; };
+		CCA71DB014731EE900DC7CD7 /* ServiceStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceStorage.h; sourceTree = "<group>"; };
+		CCA71DB114731EE900DC7CD7 /* ServiceStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceStorage.m; sourceTree = "<group>"; };
 		CDA158BC1472642600948384 /* InvalidDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvalidDummy.h; sourceTree = "<group>"; };
 		CDA158BD1472642600948384 /* InvalidDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvalidDummy.m; sourceTree = "<group>"; };
 		CDA158C01472787C00948384 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
@@ -119,6 +123,8 @@
 				CC8FD19D1471AB9100477B80 /* NSObject+DependencyInjector.h */,
 				CC8FD19E1471AB9100477B80 /* NSObject+DependencyInjector.m */,
 				CC8FD1771471AB6500477B80 /* Supporting Files */,
+				CCA71DB014731EE900DC7CD7 /* ServiceStorage.h */,
+				CCA71DB114731EE900DC7CD7 /* ServiceStorage.m */,
 			);
 			path = OCDependencyInjector;
 			sourceTree = "<group>";
@@ -176,6 +182,7 @@
 			files = (
 				CC8FD20C1471CC6200477B80 /* OCSimpleInjector.h in Headers */,
 				CC8FD19F1471AB9100477B80 /* NSObject+DependencyInjector.h in Headers */,
+				CCA71DB214731EE900DC7CD7 /* ServiceStorage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC8FD1A01471AB9100477B80 /* NSObject+DependencyInjector.m in Sources */,
+				CCA71DB314731EE900DC7CD7 /* ServiceStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
