@@ -13,13 +13,13 @@ using this values.
 
 # Service.plist format
 
-Services (Dictionary)
- |- ExampleService (Dictionary)
- |   |- [Add all properties of ExampleService class you want to initialice]
- |
- |- Other Service (Dictionary)
-     |- propertyName (string): fooString
-     |- otherPropertyName (int): 5
+    Services (Dictionary)
+    |- ExampleService (Dictionary)
+    |   |- [Add all properties of ExampleService class you want to initialice]
+    |
+    |- Other Service (Dictionary)
+        |- propertyName (string): fooString
+        |- otherPropertyName (int): 5
 
 # Requirements
 
