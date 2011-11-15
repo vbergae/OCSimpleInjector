@@ -38,13 +38,13 @@ If you want an instance of class MyService at any point of your code:
         MyService *_myService;
     }
     
-    @property (nonatomic, retain) MyService *myService
+    @property (nonatomic, retain) MyService *myService;
     
     @end
     
     @implementation FooClass
     
-    @synthesize myService = _myService
+    @synthesize myService = _myService;
     
     - (id)init {
         self = [super init];
