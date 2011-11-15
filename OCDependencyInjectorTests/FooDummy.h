@@ -1,23 +1,29 @@
 //
 //  FooDummy.h
-//  OCDependencyInjector
+//  OCSimpleInjector
 //
-//  Created by Víctor Berga on 14/11/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Víctor Berga on 14/11/11 <victor@victorberga.com>
+//  Copyright (c) 2011 Víctor Berga. All rights reserved.
 //
+//  For the full copyright and license information, please view the LICENSE
+//  file that was distributed with this source code.
 
 #import <Foundation/Foundation.h>
 
+/**
+ FooDummy
+ 
+ Simple dummy class with two properties
+ */
 @interface FooDummy : NSObject
 
+/**
+ String property
+ */
 @property (nonatomic, retain) NSString *string;
+/**
+ Array property
+ */
 @property (nonatomic, retain) NSArray *array;
 
-@end
-
-@interface FooDummy() {
-@private
-    NSString *_string;
-    NSArray *_array;
-}
 @end

@@ -20,6 +20,7 @@
 		CC8FD20E1471CD7500477B80 /* OCSimpleInjector.h in Resources */ = {isa = PBXBuildFile; fileRef = CC8FD20B1471CC6200477B80 /* OCSimpleInjector.h */; };
 		CC8FD2121471D03300477B80 /* FooDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD2111471D03300477B80 /* FooDummy.m */; };
 		CC8FD2141471D07400477B80 /* BarDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC8FD2131471D07400477B80 /* BarDummy.m */; };
+		CDA158BE1472642600948384 /* InvalidDummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA158BD1472642600948384 /* InvalidDummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,10 @@
 		CC8FD20B1471CC6200477B80 /* OCSimpleInjector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCSimpleInjector.h; sourceTree = "<group>"; };
 		CC8FD2111471D03300477B80 /* FooDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FooDummy.m; sourceTree = SOURCE_ROOT; };
 		CC8FD2131471D07400477B80 /* BarDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarDummy.m; sourceTree = "<group>"; };
+		CDA158BC1472642600948384 /* InvalidDummy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvalidDummy.h; sourceTree = "<group>"; };
+		CDA158BD1472642600948384 /* InvalidDummy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvalidDummy.m; sourceTree = "<group>"; };
+		CDA158C01472787C00948384 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		CDA158C1147278AF00948384 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,8 @@
 		CC8FD1611471AB6500477B80 = {
 			isa = PBXGroup;
 			children = (
+				CDA158C1147278AF00948384 /* README.md */,
+				CDA158C01472787C00948384 /* LICENSE */,
 				CC8FD1761471AB6500477B80 /* OCDependencyInjector */,
 				CC8FD18C1471AB6500477B80 /* OCDependencyInjectorTests */,
 				CC8FD16F1471AB6500477B80 /* Frameworks */,
@@ -109,8 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				CC8FD20B1471CC6200477B80 /* OCSimpleInjector.h */,
-				CC8FD19E1471AB9100477B80 /* NSObject+DependencyInjector.m */,
 				CC8FD19D1471AB9100477B80 /* NSObject+DependencyInjector.h */,
+				CC8FD19E1471AB9100477B80 /* NSObject+DependencyInjector.m */,
 				CC8FD1771471AB6500477B80 /* Supporting Files */,
 			);
 			path = OCDependencyInjector;
@@ -153,6 +160,8 @@
 				CC8FD2111471D03300477B80 /* FooDummy.m */,
 				CC8FD2081471CA7400477B80 /* BarDummy.h */,
 				CC8FD2131471D07400477B80 /* BarDummy.m */,
+				CDA158BC1472642600948384 /* InvalidDummy.h */,
+				CDA158BD1472642600948384 /* InvalidDummy.m */,
 			);
 			name = "Dummy Classes";
 			path = OCDependencyInjectorTests;
@@ -288,6 +297,7 @@
 				CC8FD1A71471AF3A00477B80 /* NSObject+DependecyInjectorTests.m in Sources */,
 				CC8FD2121471D03300477B80 /* FooDummy.m in Sources */,
 				CC8FD2141471D07400477B80 /* BarDummy.m in Sources */,
+				CDA158BE1472642600948384 /* InvalidDummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

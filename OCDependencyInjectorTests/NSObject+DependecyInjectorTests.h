@@ -1,12 +1,12 @@
 //
 //  NSObject+DependecyInjectorTests.h
-//  OCDependencyInjector
+//  OCSimpleInjector
 //
-//  Created by Víctor Berga on 14/11/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Víctor Berga on 14/11/11 <victor@victorberga.com>
+//  Copyright (c) 2011 Víctor Berga. All rights reserved.
 //
-
-//  Logic unit tests contain unit test code that is designed to be linked into an independent test executable.
+//  For the full copyright and license information, please view the LICENSE
+//  file that was distributed with this source code.
 
 #import <SenTestingKit/SenTestingKit.h>
 

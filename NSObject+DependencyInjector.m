@@ -1,19 +1,21 @@
 //
 //  NSObject+DependencyInjector.m
-//  OCDependencyInjector
+//  OCSimpleInjector
 //
-//  Created by Víctor Berga on 14/11/11.
+//  Created by Víctor Berga on 14/11/11 <victor@victorberga.com>
 //  Copyright (c) 2011 Víctor Berga. All rights reserved.
 //
+//  For the full copyright and license information, please view the LICENSE
+//  file that was distributed with this source code.
 
 #import "NSObject+DependencyInjector.h"
 
-NSString * const kServiceKey = @"Services";
-NSString * const kSubfixServiceKey = @"Service";
+NSString * const kServiceKey        = @"Services";
+NSString * const kSubfixServiceKey  = @"Service";
 
 @interface NSObject ()
 
-- (NSDictionary *)parametersOfService:(NSString *)service;
++ (NSDictionary *)parametersOfService:(NSString *)service;
 
 @end
 
@@ -21,7 +23,7 @@ NSString * const kSubfixServiceKey = @"Service";
 
 - (id)get:(NSString *)service
 {
-    NSDictionary *parameters = [self parametersOfService:service];
+    NSDictionary *parameters = [NSObject parametersOfService:service];
     
     // Creates a new autoreleased instance of 'service' class
     id instance = [[[NSClassFromString(service) alloc] init] autorelease];
@@ -30,31 +32,27 @@ NSString * const kSubfixServiceKey = @"Service";
     return instance;
 }
 
-- (NSDictionary *)parametersOfService:(NSString *)service
++ (NSDictionary *)parametersOfService:(NSString *)service
 {
     // Local variables
     NSString *path                      = nil;
-    NSString *parametersFilename        = nil;    
     NSString *key                       = nil; 
-    static NSDictionary *parameters     = nil;
+    NSDictionary *services              = nil;
  
     // Searches Service.plist file
-    if (!parameters) {
-        parametersFilename = [NSString stringWithFormat:kServiceKey];
-        for (NSBundle *bundle in [NSBundle allBundles]) {
-            path =  [bundle pathForResource:parametersFilename 
-                                     ofType:@"plist"];
-            if (path)
-                break;
-        }
-        
-        parameters = [NSDictionary dictionaryWithContentsOfFile:path];
+    for (NSBundle *bundle in [NSBundle allBundles]) {
+        path =  [bundle pathForResource:kServiceKey 
+                                 ofType:@"plist"];
+        if (path)
+            break;
     }
+        
+    services = [NSDictionary dictionaryWithContentsOfFile:path];
     
     // Gets key for current service
     key = [NSString stringWithFormat:@"%@%@", service, kSubfixServiceKey];
     
-    return [[parameters valueForKey:kServiceKey] valueForKey:key];
+    return [[services valueForKey:kServiceKey] valueForKey:key];
 }
 
 @end
