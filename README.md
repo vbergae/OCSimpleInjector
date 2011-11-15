@@ -28,6 +28,24 @@ See: (http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/Key
 
 # Ussage
 
+Add a MyService key and properties to Service.plist.
+If you want an instance of class MyService at any point of your code:
+
+    #import <Foundation/Foundation.h>
+    #import "MyService.h"
+
+    @interface FooClass : NSObject {
+        MyService *_myService;
+    }
+    
+    @property (nonatomic, retain) MyService *myService
+    
+    @end
+    
+    @implementation FooClass
+    
+    @synthesize myService = _myService
+    
     - (id)init {
         self = [super init];
         if (self) {
@@ -36,3 +54,5 @@ See: (http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/Key
         
         return self;
     }
+    
+    @end
