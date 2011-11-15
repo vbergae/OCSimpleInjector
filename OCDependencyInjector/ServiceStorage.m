@@ -1,10 +1,12 @@
 //
-//  ClassStorage.m
+//  NSObject+DependencyInjector.m
 //  OCSimpleInjector
 //
-//  Created by Víctor Berga on 15/11/11.
-//  Copyright (c) 2011 __MyCompanyName__. All rights reserved.
+//  Created by Víctor Berga on 15/11/11 <victor@victorberga.com>
+//  Copyright (c) 2011 Víctor Berga. All rights reserved.
 //
+//  For the full copyright and license information, please view the LICENSE
+//  file that was distributed with this source code.
 
 #import "ServiceStorage.h"
 
@@ -38,17 +40,11 @@ static ServiceStorage *_sharedStorage = nil;
 
 - (void)saveService:(NSString *)service object:(id)instance
 {
-    NSLog(@"Saving service: %@", service);
-    NSLog(@"instance: %@", instance);
     [self.services setObject:instance forKey:service];
-    
-    NSLog(@"Service %@ saved!", service);
 }
 
 - (id)getService:(NSString *)service
 {
-    NSLog(@"Getting service: %@", service);
-    NSLog(@"Saved services: %@", self.services);
     return [self.services objectForKey:service];
 }
 
