@@ -11,24 +11,26 @@ When you get a new service, OCSimpleInjector searchs a list of parameters
 to initialice inside the Services.plist file and instantiates the service
 using this values.
 
-# Service.plist format
+All service keys must end with 'Service' subfix.
+
+# Services.plist format
 
     Services (Dictionary)
     |- ExampleService (Dictionary)
     |   |- [Add all properties of ExampleService class you want to initialice]
     |
-    |- Other Service (Dictionary)
+    |- OtherService (Dictionary)
         |- propertyName (string): fooString
         |- otherPropertyName (int): 5
 
 # Requirements
 
-Your services must be the Key-Value Coding compliant.
+Your services must be Key-Value Coding compliant.
 See: (http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/KeyValueCoding/Articles/KeyValueCoding.html)
 
 # Ussage
 
-Add a MyService key and properties to Service.plist.
+Add a MyService key and properties to Services.plist.
 If you want an instance of class MyService at any point of your code:
 
     #import <Foundation/Foundation.h>
