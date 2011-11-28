@@ -11,12 +11,9 @@
 #import "NSObject+DependencyInjector.h"
 #import "ServiceStorage.h"
 
-NSString * const kServiceKey        = @"Services";
-NSString * const kSubfixServiceKey  = @"Service";
-
-@interface NSObject ()
-
-+ (NSDictionary *)parametersOfService:(NSString *)service;
+@interface NSObject () {
+    NSDictionary *_servicesDictionary;
+}
 
 @end
 
@@ -28,7 +25,8 @@ NSString * const kSubfixServiceKey  = @"Service";
     instance = [[ServiceStorage sharedStorage] getService:service];
     
     if (!instance) {
-        NSDictionary *parameters = [NSObject parametersOfService:service];
+        NSDictionary *parameters = [[ServiceStorage sharedStorage]
+                                    parametersOfService:service];
         
         // Creates a new autoreleased instance of 'service' class
         instance = [[[NSClassFromString(service) alloc] init] autorelease];
@@ -41,29 +39,6 @@ NSString * const kSubfixServiceKey  = @"Service";
     }
     
     return instance;
-}
-
-+ (NSDictionary *)parametersOfService:(NSString *)service
-{
-    // Local variables
-    NSString *path                      = nil;
-    NSString *key                       = nil; 
-    NSDictionary *services              = nil;
- 
-    // Searchs Services.plist file
-    for (NSBundle *bundle in [NSBundle allBundles]) {
-        path =  [bundle pathForResource:kServiceKey 
-                                 ofType:@"plist"];
-        if (path)
-            break;
-    }
-        
-    services = [NSDictionary dictionaryWithContentsOfFile:path];
-    
-    // Gets key for current service
-    key = [NSString stringWithFormat:@"%@%@", service, kSubfixServiceKey];
-    
-    return [[services valueForKey:kServiceKey] valueForKey:key];
 }
 
 @end

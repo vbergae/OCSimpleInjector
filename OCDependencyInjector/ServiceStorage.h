@@ -20,6 +20,9 @@
  */
 @interface ServiceStorage : NSObject
 
+#pragma mark -
+#pragma mark Instance Methods
+
 /**
  Saves given service instace to reuse it later
  
@@ -36,6 +39,17 @@
  @return nil If the service doesn't exists in shared storege
  */
 - (id)getService:(NSString *)service;
+
+/**
+ Returns intial data for service given
+ 
+ @param NSString Service name
+ @return NSDictionary Initial parameters for a new 'service' instance
+ */
+- (NSDictionary *)parametersOfService:(NSString *)service;
+
+#pragma mark -
+#pragma mark Class Methods
 
 /**
  Creates a shared ServiceStorage instance

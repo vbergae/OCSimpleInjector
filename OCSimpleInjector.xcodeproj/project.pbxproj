@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CC622B7A14843A490092D27B /* ServiceStorageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CC622B7914843A490092D27B /* ServiceStorageTests.m */; };
 		CC8FD1711471AB6500477B80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD1701471AB6500477B80 /* Cocoa.framework */; };
 		CC8FD1871471AB6500477B80 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD1861471AB6500477B80 /* SenTestingKit.framework */; };
 		CC8FD1881471AB6500477B80 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC8FD1701471AB6500477B80 /* Cocoa.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CC622B7814843A490092D27B /* ServiceStorageTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServiceStorageTests.h; sourceTree = "<group>"; };
+		CC622B7914843A490092D27B /* ServiceStorageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServiceStorageTests.m; sourceTree = "<group>"; };
 		CC8FD16D1471AB6500477B80 /* OCSimpleInjector.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OCSimpleInjector.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC8FD1701471AB6500477B80 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		CC8FD1781471AB6500477B80 /* OCSimpleInjector-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OCSimpleInjector-Info.plist"; sourceTree = "<group>"; };
@@ -141,10 +144,12 @@
 		CC8FD18C1471AB6500477B80 /* OCDependencyInjectorTests */ = {
 			isa = PBXGroup;
 			children = (
+				CC8FD18D1471AB6500477B80 /* Supporting Files */,
 				CC8FD1A11471AE7400477B80 /* Dummy Classes */,
 				CC8FD1A51471AF3A00477B80 /* NSObject+DependecyInjectorTests.h */,
 				CC8FD1A61471AF3A00477B80 /* NSObject+DependecyInjectorTests.m */,
-				CC8FD18D1471AB6500477B80 /* Supporting Files */,
+				CC622B7814843A490092D27B /* ServiceStorageTests.h */,
+				CC622B7914843A490092D27B /* ServiceStorageTests.m */,
 			);
 			path = OCDependencyInjectorTests;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				CC8FD2121471D03300477B80 /* FooDummy.m in Sources */,
 				CC8FD2141471D07400477B80 /* BarDummy.m in Sources */,
 				CDA158BE1472642600948384 /* InvalidDummy.m in Sources */,
+				CC622B7A14843A490092D27B /* ServiceStorageTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

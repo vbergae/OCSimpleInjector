@@ -10,16 +10,23 @@
 
 #import "ServiceStorage.h"
 
+NSString * const kServicesPlistFilename = @"Services";
+NSString * const kSubfixServiceKey      = @"Service";
+NSString * const kServiceKey            = @"Services";
+
 @interface ServiceStorage() {
 @private
     NSMutableDictionary *_services;
+    NSDictionary *_servicesDictionary;
 }
 
+@property (nonatomic, retain) NSDictionary *servicesDictionary;
 @property (nonatomic, retain) NSMutableDictionary *services;
 
 @end
 
 @implementation ServiceStorage
+@dynamic servicesDictionary;
 
 @synthesize services = _services;
 
@@ -36,6 +43,29 @@
 static ServiceStorage *_sharedStorage = nil;
 
 #pragma mark -
+#pragma mark Dynamic properties
+
+- (NSDictionary *)servicesDictionary
+{
+    if (!_servicesDictionary) {
+        // Local variables
+        NSString *path = nil;
+        
+        // Searchs Services.plist file
+        for (NSBundle *bundle in [NSBundle allBundles]) {
+            path =  [bundle pathForResource:kServiceKey 
+                                     ofType:@"plist"];
+            if (path)
+                break;
+        }
+        
+        _servicesDictionary = [NSDictionary dictionaryWithContentsOfFile:path];                
+    }
+    
+    return _servicesDictionary;
+}
+
+#pragma mark -
 #pragma mark Instance Methods
 
 - (void)saveService:(NSString *)service object:(id)instance
@@ -46,6 +76,16 @@ static ServiceStorage *_sharedStorage = nil;
 - (id)getService:(NSString *)service
 {
     return [self.services objectForKey:service];
+}
+
+- (NSDictionary *)parametersOfService:(NSString *)service
+{
+    // Gets key for current service
+    NSString *key = [NSString stringWithFormat:@"%@%@", 
+                     service, kSubfixServiceKey];
+    
+    return [[[[ServiceStorage sharedStorage] servicesDictionary] 
+             valueForKey:kServiceKey] valueForKey:key];
 }
 
 #pragma mark -
