@@ -56,7 +56,7 @@ See: (http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/Key
     #pragma mark -
     #pragma mark Properties
 
-    @synthesize foo = _foo;
+    @synthesize stringValue = _stringValue;
     
     #pragma mark -
     #pragma mark Memory management
@@ -87,7 +87,7 @@ See: (http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/Key
     </dict>
     </plist>
 
-## User the service BarDummy at any point of your code
+## Use the service BarDummy at any point of your code
 
     #import <Foundation/Foundation.h>
     #import "BarDummy.h"
