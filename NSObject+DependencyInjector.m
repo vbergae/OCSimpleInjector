@@ -11,12 +11,6 @@
 #import "NSObject+DependencyInjector.h"
 #import "ServiceStorage.h"
 
-@interface NSObject () {
-    NSDictionary *_servicesDictionary;
-}
-
-@end
-
 @implementation NSObject (DependencyInjector)
 
 - (id)get:(NSString *)service
