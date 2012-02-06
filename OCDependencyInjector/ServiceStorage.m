@@ -17,33 +17,22 @@ NSString * const kServiceKey            = @"Services";
 @interface ServiceStorage() {
 @private
     NSMutableDictionary *_services;
-    NSDictionary *_servicesDictionary;
+    NSDictionary        *_servicesDictionary;
 }
 
-@property (nonatomic, retain) NSDictionary *servicesDictionary;
+@property (nonatomic, readonly) NSDictionary *servicesDictionary;
 @property (nonatomic, retain) NSMutableDictionary *services;
 
 @end
 
 @implementation ServiceStorage
-@dynamic servicesDictionary;
-
-@synthesize services = _services;
-
-- (id)init
-{
-    self = [super init];
-    if (self) {
-        self.services = [NSMutableDictionary dictionary];
-    }
-    
-    return self;
-}
-
-static ServiceStorage *_sharedStorage = nil;
 
 #pragma mark -
-#pragma mark Dynamic properties
+#pragma mark Properties
+
+static ServiceStorage *_sharedStorage   = nil;
+@synthesize services                    = _services;
+@dynamic servicesDictionary;
 
 - (NSDictionary *)servicesDictionary
 {
@@ -59,14 +48,36 @@ static ServiceStorage *_sharedStorage = nil;
                 break;
         }
         
-        _servicesDictionary = [NSDictionary dictionaryWithContentsOfFile:path];                
+        _servicesDictionary = [[NSDictionary alloc] initWithContentsOfFile:path];
     }
     
     return _servicesDictionary;
 }
 
 #pragma mark -
+#pragma mark Memory management
+
+- (void)dealloc
+{
+    [_servicesDictionary release];
+    _servicesDictionary = nil;
+    self.services       = nil;
+    
+    [super dealloc];
+}
+
+#pragma mark -
 #pragma mark Instance Methods
+
+- (id)init
+{
+    self = [super init];
+    if (self) {
+        self.services = [NSMutableDictionary dictionary];
+    }
+    
+    return self;
+}
 
 - (void)saveService:(NSString *)service object:(id)instance
 {
@@ -84,8 +95,8 @@ static ServiceStorage *_sharedStorage = nil;
     NSString *key = [NSString stringWithFormat:@"%@%@", 
                      service, kSubfixServiceKey];
     
-    return [[[[ServiceStorage sharedStorage] servicesDictionary] 
-             valueForKey:kServiceKey] valueForKey:key];
+    NSLog(@"serviceDictionary: %@", self.servicesDictionary);
+    return [[self.servicesDictionary valueForKey:kServiceKey] valueForKey:key];
 }
 
 #pragma mark -
