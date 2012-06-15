@@ -1,5 +1,5 @@
 # OCSimpleInjector
-Very simple Dependency Injector for Objective-C
+OCSimpleInjector is a service container and depency injector focused on be really simply to integrate with your code.
 
 # How it works
 
