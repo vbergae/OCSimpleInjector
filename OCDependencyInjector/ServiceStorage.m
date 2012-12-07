@@ -30,7 +30,6 @@ NSString * const kServiceKey            = @"Services";
 #pragma mark -
 #pragma mark Properties
 
-static ServiceStorage *_sharedStorage   = nil;
 @synthesize services                    = _services;
 @dynamic servicesDictionary;
 
@@ -101,20 +100,15 @@ static ServiceStorage *_sharedStorage   = nil;
 
 + (ServiceStorage *)sharedStorage
 {
-    if (_sharedStorage == nil) {
-        _sharedStorage = [[super allocWithZone:NULL] init];
-    }
+    static ServiceStorage *_sharedStorage   = nil;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        _sharedStorage = [[super alloc] init];
+    });
+
     return _sharedStorage;
 }
 
-+ (id)allocWithZone:(NSZone *)zone
-{
-    return [self sharedStorage];
-}
-
-- (id)copyWithZone:(NSZone *)zone
-{
-    return self;
-}
 
 @end
