@@ -20,8 +20,8 @@ NSString * const kServiceKey            = @"Services";
     NSDictionary        *_servicesDictionary;
 }
 
-@property (nonatomic, readonly) NSDictionary *servicesDictionary;
-@property (nonatomic, retain) NSMutableDictionary *services;
+@property (weak, nonatomic, readonly) NSDictionary *servicesDictionary;
+@property (nonatomic, strong) NSMutableDictionary *services;
 
 @end
 
@@ -59,11 +59,8 @@ static ServiceStorage *_sharedStorage   = nil;
 
 - (void)dealloc
 {
-    [_servicesDictionary release];
     _servicesDictionary = nil;
-    self.services       = nil;
     
-    [super dealloc];
 }
 
 #pragma mark -
@@ -112,30 +109,10 @@ static ServiceStorage *_sharedStorage   = nil;
 
 + (id)allocWithZone:(NSZone *)zone
 {
-    return [[self sharedStorage] retain];
+    return [self sharedStorage];
 }
 
 - (id)copyWithZone:(NSZone *)zone
-{
-    return self;
-}
-
-- (id)retain
-{
-    return self;
-}
-
-- (NSUInteger)retainCount
-{
-    return NSUIntegerMax;  //denotes an object that cannot be released
-}
-
-- (oneway void)release
-{
-    //do nothing
-}
-
-- (id)autorelease
 {
     return self;
 }

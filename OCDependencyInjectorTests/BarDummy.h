@@ -22,6 +22,6 @@
 /**
  FooDummy object
  */
-@property (nonatomic, retain) FooDummy *foo;
+@property (nonatomic, strong) FooDummy *foo;
 
 @end

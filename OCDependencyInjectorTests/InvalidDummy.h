@@ -17,6 +17,6 @@
  */
 @interface InvalidDummy : NSObject
 
-@property (nonatomic, readonly) id invalid;
+@property (unsafe_unretained, nonatomic, readonly) id invalid;
 
 @end

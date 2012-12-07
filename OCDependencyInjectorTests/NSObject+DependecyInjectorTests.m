@@ -23,7 +23,6 @@
                  @"String value fails");
     STAssertEqualObjects(bar.foo.array, [NSArray array],
                          @"Array key fails");
-    [bar release];
 }
 
 - (void)testSharedInstance
@@ -36,8 +35,6 @@
     STAssertTrue([bar.foo.string isEqualToString:bar2.foo.string],
                  @"DI Doen's returns same instance");
     
-    [bar release];
-    [bar2 release];
 }
 
 - (void)testInvalidService
@@ -45,7 +42,6 @@
     InvalidDummy *invalid = [[InvalidDummy alloc] init];
     STAssertNil(invalid.invalid, @"InvalidDummy should return nil object");
     
-    [invalid release];
 }
 
 @end

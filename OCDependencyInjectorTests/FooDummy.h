@@ -20,10 +20,10 @@
 /**
  String property
  */
-@property (nonatomic, retain) NSString *string;
+@property (nonatomic, strong) NSString *string;
 /**
  Array property
  */
-@property (nonatomic, retain) NSArray *array;
+@property (nonatomic, strong) NSArray *array;
 
 @end

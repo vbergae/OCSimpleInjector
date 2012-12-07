@@ -23,7 +23,7 @@
                                     parametersOfService:service];
         
         // Creates a new autoreleased instance of 'service' class
-        instance = [[[NSClassFromString(service) alloc] init] autorelease];
+        instance = [[NSClassFromString(service) alloc] init];
         [instance setValuesForKeysWithDictionary:parameters];    
         
         if (instance) {
