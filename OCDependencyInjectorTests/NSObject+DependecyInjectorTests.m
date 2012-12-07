@@ -21,7 +21,7 @@
     STAssertNotNil(bar.foo, @"Foo creation fails");
     STAssertTrue([bar.foo.string isEqualToString:@"stringValue"],
                  @"String value fails");
-    STAssertEqualObjects(bar.foo.array, [NSArray array],
+    STAssertEqualObjects(bar.foo.array, @[],
                          @"Array key fails");
 }
 
