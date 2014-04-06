@@ -28,7 +28,7 @@ All service keys must end with 'Service' subfix.
 Your services must be Key-Value Coding compliant.
 See: (https://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/KeyValueCoding/Articles/KeyValueCoding.html)
        
-# Ussage
+# Usage
 
 ##Create a new service, for example: BarDummy
 
