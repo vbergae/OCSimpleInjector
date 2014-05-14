@@ -1,3 +1,8 @@
+# **WARNING** #
+
+This project has been deprecated in favour of [ObjectivePim](http://vbergae.github.io/ObjectivePim
+ ) and will no be maintained.
+
 # OCSimpleInjector
 OCSimpleInjector is a service container and depency injector focused on be really simply to integrate with your code.
 
